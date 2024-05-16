@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// var today = new Date();
+// var currentYear = today.getFullYear();
+// var currentMonth = today.getMonth() + 1; 
+// var currentDate = today.getDate();
+
+
+// var birth = prompt("Enter your date of birth in the format MM/DD/YYYY:");
+// var birthparts = birth.split('/');
+
+// // Extract year, month, and day from user input
+// var birthYear = parseInt(birthparts[2], 10);
+// var birthMonth = parseInt(birthparts[0], 10);
+// var birthDate = parseInt(birthparts[1], 10);
+
+// // Calculate age
+// var age = currentYear - birthYear;
+// if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDate < birthDate)) {
+//   age--;
+// }
+
+// // Display the age
+// document.write("You are " + age + " years old.");
+
+
+
+function passwordGenerator() {
+  var length = 8,
+      set = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+',
+      password = "";
+  for (var i = 0, n = set.length; i < length; ++i) {
+    password += set.charAt(Math.floor(Math.random() * n));
+  }
+  return password;
+}
+
+console.log(PasswordGenerator());
+
+
+    </script>
+</body>
+</html>
